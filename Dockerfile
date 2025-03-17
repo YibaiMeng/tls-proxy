@@ -12,7 +12,7 @@ RUN go build -o tls-proxy
 # --------------------------------------------------
 # 2) RUNTIME STAGE
 # --------------------------------------------------
-FROM --platform=$PLATFORM alpine:3.18 AS runner
+FROM --platform=$PLATFORM alpine:3.21 AS runner
 RUN adduser -D appuser
 USER appuser
 WORKDIR /app
